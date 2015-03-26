@@ -1,0 +1,41 @@
+.index-container-background {
+  background-image: url("../img/index-page-dog-2.jpg");
+  background-size: cover;
+  height: 500px;}
+
+  .jumbotron-text {
+    text-align: right;
+  }
+
+.push-down-container {
+    margin-top: 71px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+}
+
+/*.dog-profile-header-image {
+  background-image: url("../img/rowan.jpg");
+  background-repeat: no-repeat;
+  background-size: 800px 640px;
+  height: 500px;
+  }*/
+
+  .hero-unit {
+  background-image:url('../img/index-page-dog.jpg');
+  background-size:cover;
+  height:300px;
+  opacity: .5;
+}
+
+h1 {
+  position: relative;
+  top: -350px;
+  left: 40px;
+  color:#fff;
+}
