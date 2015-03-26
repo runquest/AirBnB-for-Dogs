@@ -5,8 +5,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :address
       t.string :email
       t.string :phone_number
-      t.integer :money
-      t.date :birthday
       t.timestamps 
     end
 
@@ -18,7 +16,7 @@ class CreateUsers < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :contracts do |t|
+    create_table :bookings do |t|
       t.references :hosts
       t.references :dogs
       t.integer :dog_feedback
