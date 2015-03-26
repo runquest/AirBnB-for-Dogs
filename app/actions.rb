@@ -1,6 +1,13 @@
 # Homepage (Root path)
 get '/' do
-  erb :index
+  if params[:city].present?
+
+  @hosts = Host.where("city LIKE ?", "#{params[:city]}%")
+
+  erb :hosts
+  else
+    erb :index
+  end
 end
 
 get '/hosts' do 

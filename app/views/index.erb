@@ -1,18 +1,3 @@
-<h1>Airbnb for Dogs</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<body class="index-container-background">
+<body class="index-container-background" id="home-page">
 <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -38,6 +23,7 @@
           <form class="navbar-form navbar-right">
             <button type="submit" class="btn btn-success">Sign in</button>
             <button type="submit" class="btn btn-primary">Log in</button>
+            <button type="submit" class="btn btn-primary">Become a Host</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -52,27 +38,15 @@
           <br/>
  <br/>
  <br/>
- <!--          
- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
         </div>
-        <!-- <div class="col-md-4">
-          <h2>HOSTS REVIEW</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>DOGS REVIEW</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div> -->
       </div>
 <div class="row">
   <div class="col-lg-6 col-md-6">
-    <div class="input-group">
-      <input type="text" class="form-control input-lg" placeholder="e.g. Vancouver">
-      <span class="input-group-btn">
-        <button class="btn btn-default input-lg" type="button">Go!</button>
-      </span>
+    <div class="input-group" class="wrapper">
+      <form method="get" action="/" class="row">
+        <input type="text" class="search-box form-control input-lg" name="city" placeholder="e.g. Vancouver">
+        <button class="btn btn-default input-lg" type="submit">Go!</button>
+      </form>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->

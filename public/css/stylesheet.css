@@ -39,3 +39,7 @@ h1 {
   left: 40px;
   color:#fff;
 }
+
+#home-page .search-box {
+  width: 75%;
+}
