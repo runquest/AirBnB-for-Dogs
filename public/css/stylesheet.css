@@ -15,19 +15,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 40px;
 }
-
-/*.dog-profile-header-image {
-  background-image: url("../img/rowan.jpg");
-  background-repeat: no-repeat;
-  background-size: 800px 640px;
-  height: 500px;
-  }*/
-
   .hero-unit {
-  background-image:url('../img/index-page-dog.jpg');
+  background-image:url('../img/index-page-dog.gif');
   background-size:cover;
   height:300px;
   opacity: .5;
@@ -40,6 +31,22 @@ h1 {
   color:#fff;
 }
 
-#home-page .search-box {
-  width: 75%;
+.stars-rating {
+    font-size: 2em;
+    margin-top: 10px;
+    padding-left: 0.5em;
+}
+
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
 }
