@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :address
       t.string :email
       t.string :phone_number
+      t.string :image_url
       t.timestamps 
     end
 
@@ -12,7 +13,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name 
       t.string :address
       t.string :email
-      t.string :phone_number    
+      t.string :phone_number
+      t.string :image_url    
       t.timestamps
     end
 

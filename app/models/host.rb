@@ -1,5 +1,5 @@
 class Host < ActiveRecord::Base
-  has_many :dogs, through: :contracts
+  has_many :dogs, through: :bookings
 
 
 end
