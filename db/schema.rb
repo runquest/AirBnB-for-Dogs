@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20150326175303) do
 
   create_table "dogs", force: true do |t|
     t.string   "name"
+    t.string   "breed"
     t.string   "address"
     t.string   "email"
     t.string   "phone_number"

@@ -10,7 +10,8 @@ class CreateUsers < ActiveRecord::Migration
     end
 
     create_table :dogs do |t|
-      t.string :name 
+      t.string :name
+      t.string :breed 
       t.string :address
       t.string :email
       t.string :phone_number
