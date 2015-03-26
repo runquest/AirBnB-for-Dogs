@@ -1,0 +1,7 @@
+<h1>Host Listing</h1>
+<% @hosts.each do |host| %>
+  <div>
+    <h3>
+    <a href="/hosts/<%= host.id %>"><%= host.name %></a><small> - <%= host.address %> - <%= host.phone_number %></small>
+  </div>
+<% end %>
