@@ -137,3 +137,11 @@ h1 {
   padding-bottom: 1.1em;
   border-bottom: 1px solid #e8e8e8;
 }
+
+.post_container {
+  float: left;
+  max-width: 60%;
+}
+.map_container {
+  float: right;
+}
