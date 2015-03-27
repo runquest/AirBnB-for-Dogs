@@ -32,16 +32,21 @@
         </div>
 
         <div class="rating text-center"><h2>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></h2>
+          <% @dog.average_rating.times do %>
+            <span>☆</span>
+          <% end %>
+          </h2>
           </div>
         <div class="">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <% @dog.bookings.each do |booking| %>
+            <p><%= booking.owner_comments %> </p>
+          <%end%>
         </div>
       </div>
       <div class="col-md-4">
         <h2>PROFILE DESCRIPTION</h2>
         <div class="under-h2-margin">
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><%= @dog.description %> </p>
 
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 
@@ -53,9 +58,9 @@
 
         <h2>CONTACT </h2>
         <ul class="under-h2-margin list-unstyled">
-          <li><h4>DOGNAME <%= dog.name %></h4></li>   
-          <li><h4>PHONE # </h4></li>
-          <li><h4>EMAIL </h4></li>   
+          <li><h4>DOGNAME <%= @dog.name %></h4></li>   
+          <li><h4>PHONE #<%= @dog.phone_number %> </h4></li>
+          <li><h4>EMAIL <%= @dog.email %></h4></li>   
         </ul>
         <br/>
         <br/>
