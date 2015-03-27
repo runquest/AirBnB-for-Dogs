@@ -24,3 +24,8 @@ get '/dogs/:id' do
   @dog = Dog.find params[:id]
   erb :show_dog
 end
+
+
+get '/test/'do
+erb :hosts
+end
