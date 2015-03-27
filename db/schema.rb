@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150327193036) do
+ActiveRecord::Schema.define(version: 20150327200717) do
 
   create_table "bookings", force: true do |t|
     t.integer  "host_id"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150327193036) do
     t.string   "country"
     t.string   "zipcode"
     t.string   "description"
+    t.string   "profile_picture"
   end
 
   create_table "hosts", force: true do |t|
@@ -50,6 +51,7 @@ ActiveRecord::Schema.define(version: 20150327193036) do
     t.string   "country"
     t.string   "zipcode"
     t.string   "description"
+    t.string   "profile_picture"
   end
 
 end

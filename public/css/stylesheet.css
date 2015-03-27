@@ -1,3 +1,7 @@
+img {
+  max-width: 100%
+}
+
 .index-container-background {
   background-image: url("../img/index-page-dog-2.jpg");
   background-size: cover;

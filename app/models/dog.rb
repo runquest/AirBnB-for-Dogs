@@ -6,10 +6,12 @@ class Dog < ActiveRecord::Base
     total_feedback = 0
 
     bookings.each do |booking|
-      total_feedback += booking.dog_feedback
+      total_feedback += booking.owner_feedback
     end
     total_feedback/bookings.length
   end
+
+  
 
 
 end
