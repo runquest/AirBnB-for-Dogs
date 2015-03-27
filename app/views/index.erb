@@ -7,7 +7,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<body class="index-container-background">
+
+<body class="index-container-background" id="home-page">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -40,25 +41,32 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6 col-md-6">
-        <div class="input-group">
-          <input type="text" class="form-control input-lg" placeholder="e.g. Vancouver">
-          <span class="input-group-btn">
-            <button class="btn btn-default input-lg" type="button">Go!</button>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+     <div class="col-lg-6 col-md-6">
+       <div class="input-group" class="wrapper">
+         <form method="get" action="/" class="row">
+           <input type="text" class="search-box form-control input-lg" name="city" placeholder="e.g. Vancouver">
+           <button class="btn btn-default input-lg" type="submit">Go!</button>
+         </form>
+       </div><!-- /input-group -->
+     </div><!-- /.col-lg-6 -->
+   </div><!-- /.row -->
 
-
-
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">HOTDOG 2015</p>
-      </div>
-    </footer>
-  </div> <!-- /container -->
+   <div class="row">
+     <div class="col-lg-6 col-md-6">
+       <div class="input-group" class="wrapper">
+         <form method="get" action="/" class="row">
+           <input type="text" class="search-box form-control input-lg" name="city" placeholder="e.g. Vancouver">
+           <button class="btn btn-default input-lg" type="submit">Go!</button>
+         </form>
+       </div><!-- /input-group -->
+     </div><!-- /.col-lg-6 -->
+   </div><!-- /.row -->
+   <footer class="footer">
+    <div class="container">
+      <p class="text-muted">HOTDOG 2015</p>
+    </div>
+  </footer>
+</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
