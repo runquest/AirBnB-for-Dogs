@@ -10,6 +10,9 @@ gem 'sinatra-activerecord'
 
 gem 'puma'
 gem 'tux'
+gem 'rspec'
+gem 'rspec-collection_matchers'
+gem 'database_cleaner'
 
 group :development, :test do
   gem 'pry'
