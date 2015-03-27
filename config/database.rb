@@ -14,7 +14,7 @@ configure do
     puts "Connecting to development database..."
     set :database, {
       adapter: "sqlite3",
-      database: "db/development.sqlite3"
+      database: "db/db.sqlite3"
     }
   end
 
