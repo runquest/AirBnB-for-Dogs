@@ -36,16 +36,17 @@
       </div><!-- row id = breadcrumb -->
     </div>
     <div class="row">
-      <div class="col-sm-6"><div class="thumbnail">
-            <% @hosts.each do |host| %>
+    <% @hosts.each do |host| %>
+      <div class="col-sm-6">
+      <div class="thumbnail">
         <img src="http://placehold.it/350x150">
         <div class="thumb-content">
-        <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4>
+       <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
         </div><!-- thumb-content -->
-        <% end %>
       </div>
       </div>
+      <% end %>
       </div>
     </div>
   </div>
