@@ -1,43 +1,143 @@
-<h1>Become a Host!</h1>
+<div class=" " id="home-page">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="/">HOTDOG</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-success">Sign up</button>
+          <button type="submit" class="btn btn-primary">Log in</button>
+          <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
 
-<form method="post" action="/users">
-  <div>
-    <label>Name:</label>
-    <input type="text" name="name" placeholder="name">
+
+
+
+
+
+  <div class="container profile-push-down-container">
+
+    <div class="container">
+
+
+
+      <h2> BECOME A HOST </h2>
+
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="breadcrumbs" class="">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Become a Host</li>
+            </ol>
+          </div><!-- column id = breadcrumb -->
+        </div><!-- row id = breadcrumb -->
+      </div>
+
+
+      <form method="post" action="/users" class="form-horizontal">
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-6">
+            <input type="text" name="name" placeholder="name" class="form-control">
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-6">
+              <input type="text" name="email" placeholder="email" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Street Address:</label>
+            <div class="col-sm-6">
+              <input type="text" name="address" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">City:</label>
+            <div class="col-sm-6">
+              <input type="text" name="city" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">  
+          <div>
+            <label class="col-sm-2 control-label">Postal Code:</label>
+            <div class="col-sm-6">
+
+              <input type="text" name="zipcode" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Country:</label>
+            <div class="col-sm-6">
+
+              <input type="text" name="country" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Description:</label>
+            <div class="col-sm-6">
+
+              <input type="text" name="description" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Username:</label>
+            <div class="col-sm-6">
+
+              <input type="text" name="username" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <label class="col-sm-2 control-label">Password:</label>
+            <div class="col-sm-6">
+
+              <input type="text" name="password" class="form-control">
+            </div>
+          </div><!--column-->
+        </div><!--form-group-->
+
+        <div class="form-group">
+          <div>
+            <input class="btn btn-success btn-lg btn-block col-sm-6" type="submit" value="Submit">
+          </div>
+        </div>
+      </form>
+
+    </div>
   </div>
-  <div>
-    <label>Email:</label>
-    <input type="text" name="email" placeholder="email">
-  </div>
-  <div>
-    <label>Street Address:</label>
-    <input type="text" name="address">
-  </div>
-  <div>
-    <label>City:</label>
-    <input type="text" name="city">
-  </div>
-  <div>
-    <label>Postal Code:</label>
-    <input type="text" name="zipcode">
-  </div>
-  <div>
-    <label>Country:</label>
-    <input type="text" name="country">
-  </div>
-  <div>
-    <label>Description:</label>
-    <input type="text" name="description">
-  </div>
-  <div>
-    <label>Username:</label>
-    <input type="text" name="username">
-  </div>
-  <div>
-    <label>Password:</label>
-    <input type="text" name="password">
-  </div>
-  <div>
-    <input type="submit" value="Submit">
-  </div>
-</form>
