@@ -1,3 +1,5 @@
+require 'digest'
+
 class Host < ActiveRecord::Base
   has_many :dogs, through: :bookings
   validates :name, presence: true 
@@ -6,14 +8,20 @@ class Host < ActiveRecord::Base
   has_many :bookings
   scope :profile_pic, ->(booking) { where(id: booking.host_id).first.profile_picture }
 
-  def average_rating
-    total_feedback = 0
+  # before_save :calculate_user_email_hash
 
-    bookings.each do |booking|
-      total_feedback += booking.dog_feedback
-    end
-    total_feedback/bookings.length
-  end
+  # def average_rating
+  #   total_feedback = 0
 
+  #   bookings.each do |booking|
+  #     total_feedback += booking.dog_feedback
+  #   end
+  #   total_feedback/bookings.length
+  # end
 
+  # def calculate_user_email_hash
+  #   #add hash column
+  #   self.hash = Digest::MD5.hexdigest email 
+
+  # end
 end
