@@ -46,6 +46,6 @@ task "db:populate" do
   Booking.delete_all
   Booking.create!(host_id: eating.id, dog_id: user1.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "amazing home!", owner_comments: "very cute dog")
   Booking.create!(host_id: eating.id, dog_id: user2.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "I love this host!", owner_comments: "awesome dog")
-  Booking.create!(host_id: zen.id, dog_id: user2.id, dog_feedback: 7, owner_feedback: 5, dog_comments: "I love this host!", owner_comments: "This dog made my day. Very friendly.")
+  Booking.create!(host_id: zen.id, dog_id: user2.id, dog_feedback: 4, owner_feedback: 5, dog_comments: "I love this host!", owner_comments: "This dog made my day. Very friendly.")
 
 end
