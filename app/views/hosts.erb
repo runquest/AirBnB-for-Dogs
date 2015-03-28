@@ -18,74 +18,37 @@
           </form>
         </div><!--/.navbar-collapse -->
       </div>
-    </nav>
-    <div class="container profile-push-down-container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>HOTDOG HOSTLIST</h2>
-          <div id="breadcrumbs" class="">
-            <ol class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li class="active">Hostlist</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-    <!-- <div class="post_container" class="col-md-6"> -->
-      <div class="row">
-       <div class="col-xs-12 col-sm-6">
-        <% @hosts.each do |host| %>
-        <div class="col-xs-6">
-          <div class="thumbnail">
-            <img src="http://placehold.it/500x300" alt="">
-            <div class="caption">
-              <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-            </div>
-          </div>
-          </div>
-
-
-
-
-         <% end %>
-        </div>
-       
-      <!-- <div class="map_container" class="col-md-6"> -->
-        <div class="col-md-6 col-lg-6">
-          <!-- artigo em destaque -->
-          <div class="featured-article">
-            <a href="#">
-              <img src="http://placehold.it/482x350" alt="GOOGLE MAP" class="thumb">
-            </a>
-          </div>
-          <!-- /.featured-article -->
-        </div>
-      <!-- </div> --> 
+    </nav> <!-- the end of navigation -->
+    <div class="map"> 
+      <img src="http://placehold.it/482x600" alt="GOOGLE MAP" class="thumb">
+    </div><!-- map end -->
+    <div class="listing">
+      <h2> LISTINGS HOST </h2>
+      <div class="container-fluid">
        <div class="row">
-        <div class="col-xs-12">
-        <nav class="center-block">
-          <ul class="pagination">
-            <li>
-              <a href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-              <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        </div>
-        </div>
+        <div class="col-sm-12"><div id="breadcrumbs" class="">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Hostlist</li>
+          </ol>
+        </div><!-- column id = breadcrumb -->
+      </div><!-- row id = breadcrumb -->
+    </div>
+    <div class="row">
+      <div class="col-sm-6"><div class="thumbnail">
+            <% @hosts.each do |host| %>
+        <img src="http://placehold.it/350x150">
+        <div class="thumb-content">
+        <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+        </div><!-- thumb-content -->
+        <% end %>
+      </div>
+      </div>
       </div>
     </div>
   </div>
+</div>
+</div>
+</div><!-- pages div end -->
+

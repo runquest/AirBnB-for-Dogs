@@ -7,9 +7,9 @@ img {
   background-size: cover;
   height: 690px;}
 
-  .jumbotron-text {
-    text-align: right;
-  }
+.jumbotron-text {
+  text-align: right;
+}
 
 .push-down-container {
     margin-top: 50px;
@@ -49,12 +49,21 @@ img {
  width: 75%;
 }
 
+.thumb-content {
+  padding-left: 1em;
+  padding-right: 1em;  
+}
 
 h1 {
   position: relative;
   top: -350px;
   left: 40px;
   color:#fff;
+}
+
+h2 {
+  padding-left: 1em;
+
 }
 
 .stars-rating {
@@ -75,6 +84,41 @@ h1 {
 .rating > span:hover ~ span:before {
    content: "\2605";
    position: absolute;
+}
+
+
+.map {
+  /*background-color: lightblue;*/
+  height: auto;
+}
+
+.listing {
+  padding-top: 1em;
+
+}
+
+@media (min-width: 768px) {
+
+.map {
+  position: fixed;
+  top: 50px;
+  bottom: 0px;
+  right: 0;
+  width: 38.196601125%;
+  height: auto;
+}
+
+
+.listing {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 61.803398875%;
+  overflow-y: auto;
+
+}
+
 }
 
 
