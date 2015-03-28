@@ -8,7 +8,7 @@ class Host < ActiveRecord::Base
   has_many :bookings
   scope :profile_pic, ->(booking) { where(id: booking.host_id).first.profile_picture }
 
-  # before_save :calculate_user_email_hash
+  before_save :calculate_user_email_hash
 
   def average_rating
     total_feedback = 0
@@ -24,9 +24,9 @@ class Host < ActiveRecord::Base
     end
   end
 
-  # def calculate_user_email_hash
-  #   #add hash column
-  #   self.hash = Digest::MD5.hexdigest email 
+  def calculate_user_email_hash
+    #add hash column
+    self.email_hash = Digest::MD5.hexdigest email 
 
-  # end
+  end
 end

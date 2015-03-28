@@ -12,7 +12,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
-          <h4 class="navbar-text">Logged in as <em>Doug</em></h4> 
+          <!-- <h4 class="navbar-text">Logged in as <em><%=@host.name%></em></h4>  -->
           <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
         </form>
       </div><!--/.navbar-collapse -->
@@ -28,7 +28,7 @@
         <h2>PROFILE</h2>
         <div class="under-h2-margin">
 
-        <a href="#"><img title="profile image" class="center-block" src="<%= @host.profile_picture%>" width="250" height="250"></a>
+        <a href="#"><img title="profile image" class="center-block" src="http://www.gravatar.com/avatar/<%= @host.email_hash%>?s=250" width="250" height="250"></a>
         </div>
 
         <div class="rating text-center"><h2>

@@ -20,15 +20,20 @@ get '/new' do
 end
 
 post '/users' do 
-  @user = Host.new(
+  @host = Host.new(
     name: params[:name],
     email: params[:email],
     address: params[:address],
     city: params[:city],
-    country: params[:country]
+    country: params[:country],
+    description: params[:description],
+    password: params[:password],
+    username: params[:username]
     )
-  @user.save
-  redirect '/'
+  @host.save
+  @host = Host.where(username: params[:username]).first
+  id = @host.id
+  redirect "/hosts/#{id}"
 end
 
 get '/hosts/:id' do 

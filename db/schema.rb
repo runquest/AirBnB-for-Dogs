@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20150327200717) do
+ActiveRecord::Schema.define(version: 20150328213755) do
 
   create_table "bookings", force: true do |t|
     t.integer  "host_id"
@@ -33,12 +32,12 @@ ActiveRecord::Schema.define(version: 20150327200717) do
     t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "gender"
     t.string   "city"
     t.string   "country"
     t.string   "zipcode"
     t.string   "description"
     t.string   "profile_picture"
+    t.string   "gender"
   end
 
   create_table "hosts", force: true do |t|
@@ -54,6 +53,9 @@ ActiveRecord::Schema.define(version: 20150327200717) do
     t.string   "zipcode"
     t.string   "description"
     t.string   "profile_picture"
+    t.string   "password"
+    t.string   "username"
+    t.string   "email_hash"
   end
 
 end
