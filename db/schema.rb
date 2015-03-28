@@ -32,12 +32,12 @@ ActiveRecord::Schema.define(version: 20150328213755) do
     t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "gender"
     t.string   "city"
     t.string   "country"
     t.string   "zipcode"
     t.string   "description"
     t.string   "profile_picture"
-    t.string   "gender"
   end
 
   create_table "hosts", force: true do |t|
