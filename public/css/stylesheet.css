@@ -2,6 +2,15 @@ img {
   max-width: 100%
 }
 
+#profile_picture {
+  width: 300px;
+  height: 150px;
+}
+
+.thumbnail {
+  max-width: 100%;
+}
+
 .index-container-background {
   background-image: url("../img/index-page-dog-2.jpg");
   background-size: cover;
@@ -125,7 +134,7 @@ h2 {
 
 /* image thumbnail */
 .thumb {
-    display: block;
+  display: block;
   width: 100%;
   margin: 0;
 }

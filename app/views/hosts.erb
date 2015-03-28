@@ -39,10 +39,10 @@
     <% @hosts.each do |host| %>
       <div class="col-sm-6">
       <div class="thumbnail">
-        <img src="http://placehold.it/350x150">
+        <img id="profile_picture" src="<%= host.profile_picture %>">
         <div class="thumb-content">
        <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+        <p><%=host.description%></p>
         </div><!-- thumb-content -->
       </div>
       </div>
