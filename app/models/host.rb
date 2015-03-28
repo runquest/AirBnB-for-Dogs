@@ -10,14 +10,19 @@ class Host < ActiveRecord::Base
 
   # before_save :calculate_user_email_hash
 
-  # def average_rating
-  #   total_feedback = 0
+  def average_rating
+    total_feedback = 0
 
-  #   bookings.each do |booking|
-  #     total_feedback += booking.dog_feedback
-  #   end
-  #   total_feedback/bookings.length
-  # end
+    bookings.each do |booking|
+      total_feedback += booking.dog_feedback
+    end
+    
+    if bookings.length > 0
+      total_feedback/bookings.length
+    else
+      4
+    end
+  end
 
   # def calculate_user_email_hash
   #   #add hash column

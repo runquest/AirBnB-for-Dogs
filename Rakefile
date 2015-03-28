@@ -44,8 +44,8 @@ task "db:populate" do
   user2 = Dog.create!(name: "jim", breed: "golden retriever", address: "123 vancouver", email: "dogjim@gmail.com", phone_number: "12345", city: "Vancouver", country: "Canada", zipcode: nil, description: "I have a pet dog. I named it Doggie. Doggie is a wonderful dog", profile_picture: "http://animalia-life.com/data_images/dog/dog5.jpg")
 
   Booking.delete_all
-  Booking.create!(host_id: 1, dog_id: 2, dog_feedback: 5, owner_feedback: 3, dog_comments: "amazing home!", owner_comments: "very cute dog")
-  Booking.create!(host_id: 1, dog_id: 1, dog_feedback: 5, owner_feedback: 3, dog_comments: "I love this host!", owner_comments: "awesome dog")
-  Booking.create!(host_id: 2, dog_id: 1, dog_feedback: 7, owner_feedback: 5, dog_comments: "I love this host!", owner_comments: "This dog made my day. Very friendly.")
+  Booking.create!(host_id: eating.id, dog_id: user1.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "amazing home!", owner_comments: "very cute dog")
+  Booking.create!(host_id: eating.id, dog_id: user2.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "I love this host!", owner_comments: "awesome dog")
+  Booking.create!(host_id: zen.id, dog_id: user2.id, dog_feedback: 7, owner_feedback: 5, dog_comments: "I love this host!", owner_comments: "This dog made my day. Very friendly.")
 
 end

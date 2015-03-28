@@ -28,13 +28,13 @@
         <h2>PROFILE</h2>
         <div class="under-h2-margin">
 
-        <a href="#"><img title="profile image" class="center-block" src="/img/dog-owner-profile-thumbnail.jpg" width="250" height="250"></a>
+        <a href="#"><img title="profile image" class="center-block" src="<%= @host.profile_picture%>" width="250" height="250"></a>
         </div>
 
         <div class="rating text-center"><h2>
-          <!-- <#% @host.average_rating.times do %> -->
+          <% @host.average_rating.times do %>
             <span>☆</span>
-          <!-- <#% end %> -->
+          <% end %>
         </div>
         <div class="">
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
