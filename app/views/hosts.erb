@@ -39,7 +39,7 @@
     <% @hosts.each do |host| %>
       <div class="col-sm-6">
       <div class="thumbnail">
-        <img id="profile_picture" src="<%= host.profile_picture %>">
+        <img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash%>?s=200">
         <div class="thumb-content">
        <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
         <p><%=host.description%></p>

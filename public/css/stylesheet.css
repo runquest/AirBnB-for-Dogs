@@ -2,11 +2,11 @@ img {
   max-width: 100%
 }
 
-#profile_picture {
+/*#profile_picture {
   width: 300px;
   height: 150px;
   /*clip: rect(0px,60px,200px,0px);*/
-}
+/*}*/
 
 .thumbnail {
   max-width: 100%;
