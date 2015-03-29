@@ -74,6 +74,10 @@ get '/dogs/:id' do
   erb :show_dog
 end
 
+get '/final_confirmation' do 
+  erb :final_confirmation
+end
+
 
 get '/test/'do
 erb :show_dog
