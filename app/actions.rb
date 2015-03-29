@@ -25,6 +25,7 @@ get '/send_message/:id' do
   dog = Dog.find(1)
   send_message_to_host(@host, dog)
 
+  erb :confirmation
 end
 
 post '/users' do 
