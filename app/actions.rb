@@ -1,3 +1,4 @@
+require_relative './helper_methods'
 # Homepage (Root path)
 get '/' do
   if params[:city].present?
@@ -17,6 +18,14 @@ end
 
 get '/new' do 
   erb :new
+end
+
+get '/send_message' do
+
+  host = @host 
+  dog = Dog.find(19)
+  send_message_to_host(host, dog)
+
 end
 
 post '/users' do 
