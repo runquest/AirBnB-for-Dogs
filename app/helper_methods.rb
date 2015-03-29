@@ -1,4 +1,4 @@
-require 'twilio-ruby'
+# require 'twilio-ruby'
 
 def send_message_to_host(host, dog)
   # Get your Account Sid and Auth Token from twilio.com/user/account
