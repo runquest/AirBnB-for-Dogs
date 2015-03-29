@@ -113,6 +113,15 @@ h1 {
   background: url("../img/tall_dog_5.gif")
 }
 
+#host_profile {
+  height: 600px; 
+  width: 600px; 
+  background: url("../img/tall_dog_5.gif");
+  opacity: 0.5;
+  z-index: -1;
+
+}
+
 .listing {
   padding-top: 1em;
   margin-left: 1em;
