@@ -1,4 +1,4 @@
-<div class=" " id="host-list-page">
+<div class=" " id="dog-list-page">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -23,26 +23,26 @@
   <div id= "map-canvas" style= "height: 600px; width: 600px;"></div>
   </div><!-- map end -->
   <div class="listing">
-    <h2> LISTINGS HOST </h2>
+    <h2> LISTINGS dog </h2>
     <div class="container-fluid">
 
      <div class="row">
       <div class="col-sm-12"><div id="breadcrumbs" class="">
         <ol class="breadcrumb">
           <li><a href="#">Home</a></li>
-          <li class="active">Hostlist</li>
+          <li class="active">doglist</li>
         </ol>
       </div><!-- column id = breadcrumb -->
     </div><!-- row id = breadcrumb -->
   </div>
   <div class="row">
-    <% @hosts.each do |host| %>
+    <% @dogs.each do |dog| %>
     <div class="col-sm-6">
       <div class="thumbnail">
-        <img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash%>?s=200">
+        <img id="profile_picture" src="http://www.gravatar.com/avatar/<%= dog.email_hash%>?s=200">
         <div class="thumb-content">
-         <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
-         <p><%=host.description%></p>
+         <h4><a href="/dogs/<%= dog.id %>"><%= dog.name %></a></h4> 
+         <p><%=dog.description%></p>
        </div><!-- thumb-content -->
      </div>
    </div>
