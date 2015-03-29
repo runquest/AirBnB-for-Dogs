@@ -37,7 +37,7 @@ end
 
 get '/send_message/:id' do
   @host = Host.find params[:id]
-  dog = Dog.find(5)
+  dog = Dog.where(name: 'ruby').first
   send_message_to_host(@host, dog)
 
   erb :confirmation
