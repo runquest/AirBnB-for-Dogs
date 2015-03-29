@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // $(".nav").text("Book something")
   var map;
+  var marker;
   function initialize() {
     var mapOptions = {
       zoom: 8,
@@ -8,11 +9,13 @@ $(document).ready(function() {
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-34.397, 150.644), 
+      map: map
+    })
   }
 
-  // initialize();
   google.maps.event.addDomListener(window, 'load', initialize);
-  // google.maps.event.trigger(map, "resize");
 });
 
 
