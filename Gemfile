@@ -13,6 +13,7 @@ gem 'tux'
 gem 'rspec'
 gem 'rspec-collection_matchers'
 gem 'database_cleaner'
+gem 'twilio-ruby'
 
 group :development, :test do
   gem 'pry'
