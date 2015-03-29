@@ -35,12 +35,16 @@ get '/new' do
   erb :new
 end
 
+get '/confirmation' do
+  erb :confirmation
+end
+
+
 get '/send_message/:id' do
   @host = Host.find params[:id]
   dog = Dog.where(name: 'ruby').first
   send_message_to_host(@host, dog)
-
-  erb :confirmation
+  redirect "/confirmation"
 end
 
 post '/users' do 
