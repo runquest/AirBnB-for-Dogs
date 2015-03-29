@@ -1,5 +1,6 @@
 class Dog < ActiveRecord::Base
   has_many :hosts, through: :bookings
+  has_many :bookings
   validates :name, presence: true
   # validates :breed, presence: true
   # validates :gender, presence: true
@@ -7,7 +8,8 @@ class Dog < ActiveRecord::Base
   # validates :email, uniqueness: true, format: { with: /\A([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)\z/ }
   # before_save :set_breed
   before_save :calculate_user_email_hash
-  has_many :bookings
+  scope :profile_pic, ->(booking) { where(id: booking.dog_id).first.email_hash }
+  
 
   def average_rating
     total_feedback = 0
