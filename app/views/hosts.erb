@@ -1,56 +1,52 @@
-  <div class=" " id="host-list-page">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nvabar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand logo" href="/">HOTDOG</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <button type="submit" class="btn btn-success">Sign up</button>
-            <button type="submit" class="btn btn-primary">Log in</button>
-            <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
-          </form>
-        </div><!--/.navbar-collapse -->
+<div class=" " id="host-list-page">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nvabar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="/">HOTDOG</a>
       </div>
-    </nav> <!-- the end of navigation -->
-    <div class="map"> 
-      <div id= "map-canvas" style= "height: 500px; width: 600px; border: 1px solid red"></div>
-    </div><!-- map end -->
-    <div class="listing">
-      <h2> LISTINGS HOST </h2>
-      <div class="container-fluid">
-
-       <div class="row">
-        <div class="col-sm-12"><div id="breadcrumbs" class="">
-          <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li class="active">Hostlist</li>
-          </ol>
-        </div><!-- column id = breadcrumb -->
-      </div><!-- row id = breadcrumb -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-success">Sign up</button>
+          <button type="submit" class="btn btn-primary">Log in</button>
+          <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
+        </form>
+      </div><!--/.navbar-collapse -->
     </div>
-    <div class="row">
+  </nav> <!-- the end of navigation -->
+  <div class="map"> 
+  <div id= "map-canvas" style= "height: 600px; width: 600px; border: 1px solid red"></div>
+  </div><!-- map end -->
+  <div class="listing">
+    <h2> LISTINGS HOST </h2>
+    <div class="container-fluid">
+
+     <div class="row">
+      <div class="col-sm-12"><div id="breadcrumbs" class="">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Hostlist</li>
+        </ol>
+      </div><!-- column id = breadcrumb -->
+    </div><!-- row id = breadcrumb -->
+  </div>
+  <div class="row">
     <% @hosts.each do |host| %>
-      <div class="col-sm-6">
+    <div class="col-sm-6">
       <div class="thumbnail">
         <img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash%>?s=200">
         <div class="thumb-content">
-       <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
-        <p><%=host.description%></p>
-        </div><!-- thumb-content -->
-      </div>
-      </div>
-      <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+         <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
+         <p><%=host.description%></p>
+       </div><!-- thumb-content -->
+     </div>
+   </div>
+   <% end %>
+ </div>
 </div><!-- pages div end -->
 

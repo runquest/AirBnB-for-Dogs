@@ -6,7 +6,6 @@ img {
   max-width: 100%;
 }
 
-
 .index-container-background {
   background: url("../img/index-background-image.jpg")
   no-repeat center center fixed; 
@@ -16,7 +15,7 @@ img {
   background-size: cover;
 
 
-    /* Set rules to fill background */
+  /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
   
@@ -42,10 +41,6 @@ img {
   font-family: 'Lato', sans-serif;
 }
 
-
-
-
-
 .jumbotron-text {
   text-align: right;
 }
@@ -69,21 +64,6 @@ img {
   height: 40px;
 }
 
-/*.hero-unit {
-  /*background-image:url('./../img/index-page-dog.gif');*/
-/*  background-color: green;
-  background-size:cover;
-  height:300px;
-  opacity: .5;
-}
-*/
-/*.hero-unit-host {
-  background-image:url('../img/dog-owners.jpg');
-  background-size:cover;
-  height:300px;
-  opacity: .5;
-}*/
-
 #home-page .search-box {
  width: 75%;
 }
@@ -98,11 +78,6 @@ h1 {
   top: -350px;
   left: 40px;
   color:#fff;
-}
-
-h2 {
-  padding-left: 1em;
-
 }
 
 .stars-rating {
@@ -131,12 +106,19 @@ h2 {
   height: auto;
 }
 
+
+#host_signup {
+  height: 600px; 
+  width: 600px; 
+  background: url("../img/tall_dog_5.gif")
+}
+
 .listing {
   padding-top: 1em;
+  margin-left: 1em;
 
 }
 
-/* image thumbnail */
 .thumb {
   display: block;
   width: 100%;

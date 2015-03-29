@@ -15,6 +15,9 @@ gem 'rspec-collection_matchers'
 gem 'database_cleaner'
 gem 'twilio-ruby'
 
+gem 'instagram'
+
+
 group :development, :test do
   gem 'pry'
   gem 'shotgun'
