@@ -26,6 +26,11 @@ get '/hosts' do
   erb :hosts
 end
 
+get '/dogs' do 
+  @dogs = Dog.all 
+  erb :dogs
+end
+
 get '/new' do 
   erb :new
 end
@@ -67,5 +72,5 @@ end
 
 
 get '/test/'do
-erb :hosts
+erb :show_dog
 end

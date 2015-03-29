@@ -12,84 +12,80 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
-          <h4 class="navbar-text">Logged in as <em>Doughnut</em></h4> 
           <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
         </form>
       </div><!--/.navbar-collapse -->
     </div>
-  </nav>  
-
-<div class="container profile-push-down-container">
-
-
-
-    <div class="row">
-      <div class="col-md-4">
-        <h2>PROFILE</h2>
-        <div class="under-h2-margin">
-
-          <a href="#"><img title="profile image" class="center-block" src="http://www.gravatar.com/avatar/<%= @dog.email_hash%>?s=250"></a>
-        </div>
-
-        <div class="rating text-center"><h2>
-          <% @dog.average_rating.times do %>
-            <span>☆</span>
-          <% end %>
-          </h2>
-          </div>
-      </div>
-      <div class="col-md-4">
-        <h2>PROFILE DESCRIPTION</h2>
-        <div class="under-h2-margin">
-          <p><%= @dog.description %></p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-
-        <h2>CONTACT </h2>
-        <ul class="under-h2-margin list-unstyled">
-          <li><h4>Name: <%= @dog.name %></h4></li>   
-          <li><h4>Phone: <%= @dog.phone_number %> </h4></li>
-          <li><h4>Email: <%= @dog.email %></h4></li>   
-        </ul>
-        <br/>
-        <br/>
-
-        <p class="text-center">
-          <button type="button" class="btn btn-success btn-lg">ACCEPT</button>
-          <button type="button" class="btn btn-danger btn-lg">REJECT</button>
-        </p>
-        
-      </div>
+  </nav> 
+  <div class="map"> 
+    <div id="host_profile">
     </div>
-
-
-    <hr/>
-
-      <% @dog.bookings.each do |booking| %>
+  </div><!-- map end -->
+  <div class="listing">
+    <h2>PROFILE</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="breadcrumbs" class="">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Dogs</a></li>
+              <li class="active">Profile</li>
+            </ol>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col-sm-6">
+          <div>
+            <a href="#">
+              <img title="profile image" class="center-block" src="http://www.gravatar.com/avatar/<%= @dog.email_hash%>?s=250" width="250" height="250">
+            </a>
+            <div class="rating text-center">
+              <% @dog.average_rating.times do %>
+              <span style="font-size: 2em;">☆</span>
+              <% end %>
+            </div><!-- rating -->
+            <div>
+              <p class="text-center">
+                <button type="button" class="btn btn-success btn-lg">ACCEPT</button>
+                <button type="button" class="btn btn-danger btn-lg">REJECT</button>
+              </p>
+            </div>
+          </div>
+        </div><!-- column-sm-6 -->
+        <div class="col-sm-6">
+          <div>
+            <h2>CONTACT </h2>
+            <ul class="under-h2-margin list-unstyled">
+              <li><h4>Name: <%= @dog.name %> </h4></li>   
+              <li><h4>Email: <%= @dog.email %></h4></li>   
+              <li><h4><%= @dog.description %></h4></li>   
+            </ul>
+          </div>
+        </div><!-- column-sm-6 -->
+      </div><!-- row -->
+      <hr/>
+      <div>
+        <% @dog.bookings.each do |booking| %>
         <div class="row">
           <div class="col-md-8 col-md-offset-4"><h2>Review</h2></div>
         </div>
-
         <div class="row">
           <div class="col-md-4">        
-              <a href="#" class="pull-right">
-                <img title="profile image" class="img-circle img-responsive" src="<%= Host.profile_pic(booking)%>" width="140" height="140">
-              </a>
+            <a href="#" class="pull-right">
+              <img title="profile image" class="img-circle img-responsive" src="<%= Host.profile_pic(booking)%>" width="140" height="140">
+            </a>
           </div>
           <div class="col-md-6 pull-left">
             <p><%= booking.owner_comments %> </p>
             <h2><% booking.owner_feedback.times do %>
-                <span>☆</span>
-              <% end %>
-            </h2>
+              <span>☆</span>
+             <% end %>
+            </div>
+            <% end %>
           </div>
-        
-        </div>  
-        <hr/>
-        <% end %>
-       
+        </div>
       </div>
     </div>
-    </div>
+  </div>
