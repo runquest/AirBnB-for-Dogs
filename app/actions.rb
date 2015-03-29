@@ -20,11 +20,10 @@ get '/new' do
   erb :new
 end
 
-get '/send_message' do
-
-  host = @host 
-  dog = Dog.find(19)
-  send_message_to_host(host, dog)
+get '/send_message/:id' do
+  @host = Host.find params[:id]
+  dog = Dog.find(1)
+  send_message_to_host(@host, dog)
 
 end
 
