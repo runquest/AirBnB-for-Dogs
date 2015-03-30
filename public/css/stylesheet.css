@@ -30,10 +30,6 @@ img {
 
 }
 
-
-
-
-
 .confirmation-container-background {
   background: url("../img/index-page-dog.jpg")
   no-repeat center center fixed; 
@@ -66,7 +62,6 @@ img {
   font-weight: 700;
   color: orange;
 }
-
 
 
 .final-confirmation-container-background {
@@ -213,7 +208,7 @@ h1 {
 #host_profile {
   height: 600px; 
   width: 600px; 
-  background: url("../img/tall_dog_5.gif");
+  background: url("../img/dog_hug.gif");
   opacity: 0.5;
   z-index: -1;
 
