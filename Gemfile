@@ -14,6 +14,7 @@ gem 'rspec'
 gem 'rspec-collection_matchers'
 gem 'database_cleaner'
 gem 'twilio-ruby'
+gem 'geocoder'
 
 gem 'instagram'
 

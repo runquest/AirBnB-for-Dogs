@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150329220024) do
+ActiveRecord::Schema.define(version: 20150330002227) do
 
   create_table "bookings", force: true do |t|
     t.integer  "host_id"
@@ -57,6 +57,8 @@ ActiveRecord::Schema.define(version: 20150329220024) do
     t.string   "password"
     t.string   "username"
     t.string   "email_hash"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
 end

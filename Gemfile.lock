@@ -28,6 +28,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
+    geocoder (1.2.8)
     hashie (3.4.0)
     i18n (0.6.9)
     instagram (1.1.4)
@@ -113,6 +114,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   database_cleaner
+  geocoder
   instagram
   pry
   puma
