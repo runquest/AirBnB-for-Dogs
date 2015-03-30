@@ -17,29 +17,34 @@
       </div><!--/.navbar-collapse -->
     </div>
   </nav> <!-- the end of navigation -->
+
+
   <div class="container front-page">
     <div class="row">
-      <div class="col-sm-12 text-center">
-        <h3 class="success">HAPPY HOTDOGGING</h3>
+      <div class="col-sm-12">
+        <h2 class="front-page-title final-confirm-h2">HAPPY HOTDOGGING</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
-      <div class="thumbnail">
-        <div class="thumb-content text-center">
-        <h2 style="color: orange;">AMAR</h2>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="thumbnail">
+            <div class="thumb-content">
+                <h2 style="color: orange;">AMAR</h2>
+              </div>
+              <img id="profile_picture" class="img-circle" src="http://www.gravatar.com/avatar/4b87edb9d3f0398bbb394bc9b5647782?s=250">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="thumbnail">
+              <div class="thumb-content">
+                <h2 style="color: orange;">RUBY</h2>
+              </div>
+              <img id="profile_picture" class="img-circle" src="http://www.gravatar.com/avatar/<%= Dog.where(name: 'Rowan').first.email_hash%>?s=250">
+            </div>
+          </div>
         </div>
-      <img id="profile_picture" src="http://www.gravatar.com/avatar/4b87edb9d3f0398bbb394bc9b5647782?s=250">
-        </div>
-      </div>
-      <div class="col-sm-6">
-       <div class="thumbnail">
-        <div class="thumb-content text-center">
-        <h2 style="color: orange;">RUBY</h2>
-        </div>
-      <img id="profile_picture" src="http://www.gravatar.com/avatar/<%= Dog.where(name: 'Rowan').first.email_hash%>?s=250">
-        </div>
-      </div>
       </div>
     </div>
   </div>

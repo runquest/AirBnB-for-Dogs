@@ -65,7 +65,7 @@ img {
 
 
 .final-confirmation-container-background {
-  background: url("../img/index-page-dog.jpg")
+  background: url("../img/happy_dog.gif")
 
   
   no-repeat center center fixed; 
@@ -126,6 +126,10 @@ img {
     margin-top: 40px;
 }
 
+img#profile_picture {
+    margin-left: -2em;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -136,6 +140,12 @@ img {
 .front-page-title {
     font-size: 50px;
     font-family: Lato, sans-serif;
+}
+
+h2.front-page-title.final-confirm-h2 {
+    color: orange;
+    font-family: Lato, sans-serif;
+    font-size: 50px;
 }
 
 .front-page-description {
