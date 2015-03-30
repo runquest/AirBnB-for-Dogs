@@ -138,6 +138,20 @@ img {
   height: 40px;
 }
 
+.front-page-title {
+    font-size: 50px;
+    font-family: Lato, sans-serif;
+}
+
+.front-page-description {
+  padding-top: 1.5em;
+  font-size: 25px;
+}
+
+.front-page-search-row {
+  margin-top: -3.5em;
+}
+
 #home-page .search-box {
  width: 75%;
 }
