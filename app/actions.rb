@@ -42,7 +42,7 @@ end
 
 get '/send_message/:id' do
   @host = Host.find params[:id]
-  dog = Dog.where(name: 'ruby').first
+  dog = Dog.where(name: 'Rowan').first
   send_message_to_host(@host, dog)
   redirect "/confirmation"
 end
@@ -75,6 +75,9 @@ get '/dogs/:id' do
 end
 
 get '/final_confirmation' do 
+  @host = Host.where(name: 'Amar')
+  dog = Dog.where(name: 'Rowan').first
+  send_message_to_host(@host, dog)
   erb :final_confirmation
 end
 
