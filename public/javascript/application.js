@@ -1,4 +1,23 @@
 $(document).ready(function(){
+    
+
+  var imagelist = $("#instagram-images");
+
+    $.ajax({
+      type: 'GET',
+      url: 'https://api.instagram.com/v1/media/popular' ,
+      data: {
+        client_id: '309f40e3aa2e4dc8ae8d6a07283675af'
+        },
+         dataType: 'jsonp',
+         success: function (response) {
+          console.debug(response.data)
+          response.data.forEach (function(item) {
+            imagelist.append('<li><img src="'   + item.images.thumbnail.url +    '"/> </li>')
+          });
+          }
+        });
+
   var mapOptions = {
     zoom: 13,
     center: new google.maps.LatLng(49.282, -123.120)
@@ -27,6 +46,7 @@ $(document).ready(function(){
       position: new google.maps.LatLng(49.290, -123.129), 
       map: map
   });
+
 });
 
 

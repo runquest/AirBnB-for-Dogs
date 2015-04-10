@@ -19,10 +19,12 @@ img {
   border: 0;
 }
 
+#footer {
+  background-color: green;
+}
+
 
 /*---
 Specific elements on index page
 ---*/
-#map-canvas {
-  height: 660px; width: 100%; float: right;
-}
+#map-canvas {height: 660px; width: 100%; float: right;}
