@@ -5,15 +5,15 @@ $(document).ready(function(){
 
     $.ajax({
       type: 'GET',
-      url: 'https://api.instagram.com/v1/media/popular' ,
+      url: 'https://api.instagram.com/v1/tags/puppy/media/recent?count=10',
       data: {
         client_id: '309f40e3aa2e4dc8ae8d6a07283675af'
         },
          dataType: 'jsonp',
          success: function (response) {
-          console.debug(response.data)
+          // console.debug(response.data)
           response.data.forEach (function(item) {
-            imagelist.append('<li><img src="'   + item.images.thumbnail.url +    '"/> </li>')
+            imagelist.append('<img class="instagram-image" src="'   + item.images.thumbnail.url +    '"/>')
           });
           }
         });

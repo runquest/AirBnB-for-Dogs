@@ -74,7 +74,7 @@ Specific elements on index page
 
 #search-box {
   background-color: pink;
-  height: 200px;
+  height: 245px;
   position: relative;
 }
 
@@ -118,4 +118,14 @@ input.large-input, .search-button {
   right: 0;
   /*float: right; */
   overflow: hidden;
+}
+
+.my-new-list {
+  list-style: none;
+}
+
+.instagram-image {
+    width: 170px;
+    height: 170px;
+    padding: 0.5em;
 }
