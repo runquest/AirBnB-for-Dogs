@@ -1,0 +1,28 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1, h2, h3, h4, p {
+  padding: 1em;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+/*---
+Specific elements on index page
+---*/
+#map-canvas {
+  height: 660px; width: 100%; float: right;
+}
