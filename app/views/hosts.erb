@@ -1,15 +1,17 @@
 <div id="template" class="page-container">
   
    <div class="l-wrapper">
+
     <div id="nav-buttons" class="center-nav">
       <div id="host-button" class="button"><a href="/new"><h3>Become host</h3></a></div>
       <div class="button"><h3>Sign Up</h3></div>
       <div class="button"><h3>Log In</h3></div>
       <div id="logo-button" class="button"><a href="/"><h3>HotDog</h3></a></div>
     </div>    
+   
     <div class="body-content">
       <div class="list">
-        <h2>How about these hosts..</h2>
+        <h2>How about these hosts..</h2>    
         <div class="row">
           <% @hosts.each do |host| %>
           <div id="host-box" class="col-sm-6">
@@ -23,15 +25,23 @@
           </div>
           <% end %>  
         </div>
+      
       </div>
       </div> 
+    
         <div id="footer">
           <small>inspired by Rowan.</small>
         </div>
+    
     </div>
   </div>
-  <div class="r-wrapper">
-    <img id="bg" src="/img/tall_dog_4.jpg">
+  
+    <div class="r-wrapper">
+      <div class="map"> 
+        <div id="map-canvas"></div>
+      </div>
+    </div>
+
   </div>
 </div>
 

@@ -389,6 +389,21 @@ div.description {
   float: right;
 }
 
+div#map-canvas {
+  height: 960px; 
+  width: 600px;
+  top: 0;
+  left: 0;
+}
+
+.map {
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+}
+
 /* media different screens*/
 
 @media (max-width: 768px) {

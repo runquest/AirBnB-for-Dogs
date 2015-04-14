@@ -1,7 +1,7 @@
-$(document).ready(function() {
-      var mapOptions = {
+$(document).ready(function(){
+  var mapOptions = {
     zoom: 13,
-    center: new google.maps.LatLng(49.282, -123.120)
+    center: new google.maps.LatLng(49.2825, -123.108)
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -27,12 +27,4 @@ $(document).ready(function() {
       position: new google.maps.LatLng(49.290, -123.129), 
       map: map
   });
-
-
-
-     
 });
-
-
-// See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
-
