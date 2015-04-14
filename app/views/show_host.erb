@@ -1,90 +1,68 @@
-<div class="" id="dog-profile-page">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand logo" href="/">HOTDOG</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <form class="navbar-form navbar-right">
-          <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
-        </form>
-      </div><!--/.navbar-collapse -->
-    </div>
-  </nav>  
-  <div class="map"> 
-    <div id="host_profile">
-    </div>
-  </div><!-- map end -->
-  <div class="listing">
-    <h2>PROFILE</h2>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="breadcrumbs" class="">
-            <ol class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Hostlist</a></li>
-              <li class="active">Profile</li>
-            </ol>
-          </div>
-        </div>
-      </div> 
-      <div class="row">
+<div id="template" class="page-container">
+  <div class="l-wrapper">
+    <div id="nav-buttons" class="center-nav">
+      <div id="host-button" class="button"><a href="/new"><h3>Become host</h3></a></div>
+      <div class="button"><h3>Sign Up</h3></div>
+      <div class="button"><h3>Log In</h3></div>
+      <div id="logo-button" class="button"><a href="/"><h3>HotDog</h3></a></div>
+    </div>    
+
+    <div class="body-content">
+      <div class="row profile-block">  
         <div class="col-sm-6">
-          <div>
-            <a href="#">
-              <img title="profile image" class="center-block" src="http://www.gravatar.com/avatar/<%= @host.email_hash%>?s=250" width="250" height="250">
-            </a>
-            <div class="rating text-center">
+          <div id="image-profile">
+            <img title="profile image" class="center-block img-circle" src="http://www.gravatar.com/avatar/<%= @host.email_hash%>?s=250" width="250" height="250">
+            <div class="stars">
               <% @host.average_rating.times do %>
               <span style="font-size: 2em;">☆</span>
               <% end %>
-            </div><!-- rating -->
-            <div>
-              <p class="text-center">
-                <a href="/send_message/<%= @host.id%>" class="btn btn-danger btn-lg" role="button">REQUEST</a>
-              </p>
             </div>
           </div>
-        </div><!-- column-sm-6 -->
-        <div class="col-sm-6">
-          <div>
-            <h2>CONTACT </h2>
-            <ul class="under-h2-margin list-unstyled">
-              <li><h4>Name: <%= @host.name %> </h4></li>   
-              <li><h4>Email: <%= @host.email %></h4></li>   
-              <li><h4>Description: <h5><%= @host.description %></h5></h4></li>   
-            </ul>
-          </div>
-        </div><!-- column-sm-6 -->
-      </div><!-- row -->
-      <hr/>
-      <div class="container-fluid hosts_reviews">
-        <% @host.bookings.each do |booking| %>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-4"><h2>Review</h2></div>
         </div>
-        <div class="row">
-          <div class="col-md-4">        
-            <a href="#" class="pull-right">
-              <img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/<%= Dog.profile_pic(booking)%>?s=250" width="140" height="140">
-            </a>
-          </div>
-          <div class="col-md-6 pull-left">
-            <p><%= booking.dog_comments %> </p>
-            <h2><% booking.dog_feedback.times do %>
-              <span>☆</span>
-              <% end %>
+        <div class="col-sm-6">
+          <ul id="profile">
+            <h2>Meet <%= @host.name %>, she loves dogs</h2>
+            <li><strong>Email:</strong><p><%= @host.email %></p></li>
+            <li><strong>City:</strong><p><%= @host.city %></p></li>   
+          </ul>                     
+          <a href="/send_message/<%= @host.id%>" class="button request" role="button">REQUEST</a>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 description">
+          <p><%= @host.description %></p>
+        </div>
+      </div>
+
+      <div class="row reviews">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="row">
+            <h2>Every <em>"woof"</em> counts.</h2>
+            <div class="col-sm-4">
+              <% @host.bookings.each do |booking| %>
+                  <img class="img-circle review" title="profile image" src="http://www.gravatar.com/avatar/<%= Dog.profile_pic(booking)%>?s=250" width="170" height="170"></a>
+                  <h3 class="stars"><% booking.dog_feedback.times do %>
+                    <span>☆</span>
+                  <% end %></h3>
             </div>
-            <% end %>
+            <div class="col-sm-8">
+              <div id="userid">
+                <h2>Stoke</h2>
+                <p><%= booking.dog_comments %> </p>
+              </div>
+              <% end %>
+            </div>            
           </div>
         </div>
       </div>
-    </div>
+        </div>
+   </div>
   </div>
+    
+  <div class="r-wrapper">
+    <img id="bg" src="/img/tall_dog_3.jpg">
+  </div>
+<!--     <div id="footer">
+      <small>inspired by Rowan.</small>
+    </div> -->
+</div>

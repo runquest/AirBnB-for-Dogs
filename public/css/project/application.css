@@ -1,0 +1,533 @@
+  COLORS */ 
+
+  /*  #343c66  --> darkblue (buttons, top-navigtion, links (bold))
+      #cbc7c6 --> lightgraybrown (background)
+      #d4601a --> orange
+  */
+
+/*  FONTS */ 
+
+  /*  font-family: 'Droid Sans', sans-serif;
+      font-family: 'Shadows Into Light', cursive;
+  */
+
+/*.body-content > h1, .body-content > h2 {
+  font-family: 'Shadows Into Light', cursive;
+  background-color: pink;
+  padding-bottom: 1.5em;
+}*/
+
+h1 {
+  color: orange;
+}
+
+.body-content h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  color: #343c66;
+  padding-bottom: 0.2em;
+  padding-top: 0.4em; 
+  padding-left: 1em;
+}
+
+h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.5em;
+  color: orange;
+  padding-bottom: 1em;
+}
+
+h3 a {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.5em;
+  color: orange;
+}
+
+.button h3 {
+  color: white;
+  padding: 0;
+}
+
+p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1em;
+/*  color: darkgray;*/
+  line-height: 1.5em;
+}
+
+/* LAYOUT STRUCTURE */
+
+ /*body: margin: 0; padding: 0; height: 100%; */
+
+
+/*.page-container {
+  position: relative;
+}*/
+
+.l-wrapper {
+  /*background-color: red;*/
+/*  float: left;*/
+  /*width: 61.8033989%;*/
+/*  top: 50%;
+  left: 0;*/
+}
+
+.r-wrapper {
+/*  background-color: gray;*/
+/*  float: right;
+  width: 38%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;*/
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+button#go {
+  float: none;
+}
+
+div#logo-button {
+  background-color: black;
+  border: 2px solid black;
+  float: left;
+  margin-left: 2em;
+}
+
+div#logo-button h3 {
+/*  color: black;*/
+}
+
+.body-content {
+/*  background-color: pink;*/
+  padding: 10px;
+  padding-top: 100px;
+  height: 100%;
+  width: 61.8033989%;
+  position: absolute;
+
+  /*margin: 25px;  
+  margin-bottom: 50px;*/
+}
+
+.img-circle {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+.mid-element {
+   width: 31%;
+   position: absolute;
+   top: 50%;
+   left: 31%;
+   transform: translate(-50%, -50%);
+}
+
+.center-nav {
+ 
+  width: 61.8033989%;
+  position: fixed;
+  left: 0;
+  z-index: 15;
+  background-color: white;
+  margin-bottom: 80px;
+  border-bottom: 1px solid #343c66;
+}
+
+#main-nav {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.button {
+  background: orange;
+  border-radius: 5px;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  margin: 5px;
+  margin-top: 15px;
+  float: right;
+}
+
+button {
+  font-size: 1em;
+  border: 0;
+}
+
+.button:hover, #host-button:hover {
+  background-color: #cbc7c6;
+  cursor: pointer;
+}
+
+div#confirmation-message {
+    margin: 3em;
+}
+
+#host-button {
+  background-color: #343c66; 
+  margin-right: 5%;
+}
+
+#available-host-button {
+   background-color: #343c66;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+}
+
+#available-host-button:hover {
+  background: orange;
+}
+
+div.title {
+    font-family: 'Shadows Into Light', cursive;   */;
+    font-size: 5em;
+}
+
+.padding-10px {
+  padding: 40px;
+}
+
+ul#profile h2 {
+    padding-left: 0;
+}
+
+#profile-bg {min-height: 100%; position: fixed; opacity: 0.5;}
+
+
+
+
+.large-input {
+  border-radius: 5px;
+  padding: 1em;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+
+ul#main-nav li {
+  display: inline;
+  margin: 15px auto;
+  background-color: orange;
+}
+
+#footer {
+  height: 30px;
+  width: 61.803398875%;
+  position: absolute;
+  background: #343c66;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+.confirm {
+  width: 100%;
+}
+
+#confirm {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  opacity: 0.5;
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -15;
+}
+
+#show {
+  z-index: 15;
+}
+
+
+
+
+
+small#footer {
+  padding-top: 5px;
+}
+
+#bg {max-width: 38.196601125%; min-height: 100%; position: fixed; top: 0; right: 0; opacity: 0.5;}
+/*#bg-profile {max-width: 61.803398875%; min-height: 290px; position: fixed; top: 100; left: 0; opacity: 0.5;}*/
+
+
+/* NEW HOST FORM CSS */
+
+div#become-host-form {
+  margin: 0 auto;
+/*  padding: 2em;*/
+  padding-left: 50px;
+}
+
+label {
+/*  background-color: blue;*/
+}
+
+div.form-group {
+  padding: 0.3em;
+}
+
+input.form-control, textarea.form-control {
+/*  background-color: green;*/
+  border: 1px solid gray;
+  padding: 2px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+/* HOST LIST CSS */
+
+.thumb-content {
+  font-size: 0.7em;
+
+}
+
+img#profile_picture {
+  float: left;
+  padding-right: 10px;
+  border-radius: 50%;
+}
+
+div#host-box {
+  /*background-color: blue;*/
+  margin-bottom: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+div#host-box:hover {
+  background-color: #cbc7c6;
+}
+
+/* HOST PROFILE CSS */
+
+.stars {
+  text-align: center;
+}
+
+div#profile {
+  list-style: none;
+  padding-left: 10px;
+}
+
+ul#profile li {
+    list-style: none;
+}
+
+ul#profile {
+  margin: 2em;
+}
+
+a.button.request {
+  width: 100%;
+  text-decoration: none;
+}
+
+.list {
+/*  background-color: blue;*/  
+  padding-left: 4em;
+}
+
+.profile-block {
+  padding-bottom: 3em;
+}
+
+div.reviews {
+  background-color: #343c66;
+}
+
+#userid {
+  padding-left: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #cbc7c6;
+}
+
+#userid p {
+  padding-left: 0;
+  color: #cbc7c6;
+}
+
+#userid h2 {
+  padding-left: 0;
+  color: #cbc7c6;
+}
+
+div.reviews h2 {
+  color: white;
+}
+
+img.review {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+div.individual-reviews {
+  padding-left: 4em;
+  padding-top: 2em;
+}
+
+div.description {
+  padding-bottom: 3em;
+}
+
+#image-profile {
+  float: right;
+}
+
+/* media different screens*/
+
+@media (max-width: 768px) {
+  .r-wrapper {
+    display: none;
+  }
+
+#main-nav, #footer, .mid-element {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MARGINS, PADDINGS & BORDERS */
+/*
+#page-container {margin: 0; padding: 0; border; 0}
+#wrapper-left {margin: 60px 38.196601125% 40px 0; padding: 0 10px; border: 0;}
+  
+  #navigation {margin: 0 38.196601125% 0 0; padding: 0 2em; border: 0;}
+  #navigation dl { margin: 0; padding: 0; }
+
+
+
+
+  #page-content { }
+  #footer {text-align: center; padding-top: 0.5em;}
+
+#wrapper-right { }
+  #bg
+*/
+
+
+/* ELEMENT POSITIONING & SIZES */
+
+/*#page-container { }
+#wrapper-left {width: 61.803398875%; height: 100%; position: relative; float: left; left: 0; top: 0; }
+  
+  #navigation {width: 61.803398875%; height: 60px; position: fixed; top: 0; left: 0; }
+    #navigation dt { float: left; }
+  #page-content {/*height: 100%;*/}
+  /*#footer {width: 61.803398875%; height: 40px; position: fixed; bottom: 0; left: 0; }*/
+/*
+#wrapper-right {max-width: 38.196601125%; height: 100%; position: fixed; float: right; top: 0; right: 0; }
+  #bg {max-width: 38.196601125%; min-height: 100%; position: fixed; top: 0; right: 0; }*/
+
+/* ELEMENT BACKGROUND COLORS */
+
+/*body {background-color: #cbc7c6;  lightgraybrown (background) }*/
+
+/*#page-container {background-color: #343c66;  *//*--> darkblue (buttons, top-navigtion, links (bold))*/  }
+/*#wrapper-left { background-color: #cbc7c6; *//* lightgraybrown (background) */ }
+  
+  /*#navigation {background-color: #343c66;  --> darkblue (buttons, top-navigtion, links (bold))}*/
+  /*#page-content { background-color: #cbc7c6; /* lightgraybrown (background) */}*/
+  /*#footer {background-color: #343c66;  --> darkblue (buttons, top-navigtion, links (bold))}*/
+/*
+#wrapper-right { }
+  #bg*/
+
+/* ELEMENT FONTS, SIZES, WEIGHTS & COLORS */
+
+/*#page-container { }
+#wrapper-left { }
+  
+  #navigation { }
+  #page-content { }
+    h1, h2, h3 {font-family: 'Shadows Into Light', cursive;}
+    p {font-family: 'Droid Sans', sans-serif;}
+  #footer {color: orange; font-family: 'Shadows Into Light', cursive;}
+
+#wrapper-right {}
+  #bg { }*/
+
+/*-------------------------------------*/
+/*
+#wrapper-left {
+  overflow-y: auto;
+}
+
+#nav dt a {
+    background-color: orange;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 15px;
+    font-family: 'Shadows Into Light';
+    font-size: 1.5em;
+}
+*/
+
+/*#navigation dt a:hover {
+  background-color: green;
+  color: #343c66;
+}
+
+#navigation #button {
+  background-color: orange;
+}
+
+
+#wrapper-left {*/
+  /*background-color: red;*/
+/*  position: relative;
+  height: 200px;
+}
+
+div#page-content {*/
+  /*background-color: green;*/
+/*  position: absolute;
+  margin: 0px auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+vertical-align: middle;
+}
+
+
+

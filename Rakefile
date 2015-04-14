@@ -47,7 +47,12 @@ I have a very playful and well socialized pug; he's 3 years old. I also live dir
 
   Booking.delete_all
   Booking.create!(host_id: eating.id, dog_id: user1.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "amazing home!", owner_comments: "very cute dog")
-  Booking.create!(host_id: eating.id, dog_id: user2.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "I love this host!", owner_comments: "awesome dog")
-  Booking.create!(host_id: zen.id, dog_id: user2.id, dog_feedback: 4, owner_feedback: 5, dog_comments: "I love this host!", owner_comments: "This dog made my day. Very friendly.")
+  Booking.create!(host_id: eating.id, dog_id: user2.id, dog_feedback: 5, owner_feedback: 3, dog_comments: "To be, or not to be; that is the question; Whether ‘tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them. To die: to sleep: Nor more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to; ‘tis a consummation Devoutly to be wished. To die; to sleep; To sleep: perchance to dream: aye, there is the rub; ", owner_comments: "awesome dog")
+  Booking.create!(host_id: zen.id, dog_id: user2.id, dog_feedback: 4, owner_feedback: 5, dog_comments: "To be, or not to be; that is the question; Whether ‘tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them. To die: to sleep: Nor more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to; ‘tis a consummation Devoutly to be wished. To die; to sleep; To sleep: perchance to dream: aye, there is the rub; ", owner_comments: "This dog made my day. Very friendly.")
 
 end
+
+
+
+
+

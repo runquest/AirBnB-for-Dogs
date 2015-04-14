@@ -1,24 +1,5 @@
-$(document).ready(function(){
-    
-
-  var imagelist = $("#instagram-images");
-
-    $.ajax({
-      type: 'GET',
-      url: 'https://api.instagram.com/v1/tags/puppy/media/recent?count=10',
-      data: {
-        client_id: '309f40e3aa2e4dc8ae8d6a07283675af'
-        },
-         dataType: 'jsonp',
-         success: function (response) {
-          // console.debug(response.data)
-          response.data.forEach (function(item) {
-            imagelist.append('<img class="instagram-image" src="'   + item.images.thumbnail.url +    '"/>')
-          });
-          }
-        });
-
-  var mapOptions = {
+$(document).ready(function() {
+      var mapOptions = {
     zoom: 13,
     center: new google.maps.LatLng(49.282, -123.120)
   };
@@ -47,10 +28,11 @@ $(document).ready(function(){
       map: map
   });
 
+
+
+     
 });
 
 
-
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+// See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 

@@ -1,4 +1,61 @@
-<div class=" " id="host-list-page">
+<div id="template" class="page-container">
+  
+   <div class="l-wrapper">
+    <div id="nav-buttons" class="center-nav">
+      <div id="host-button" class="button"><a href="/new"><h3>Become host</h3></a></div>
+      <div class="button"><h3>Sign Up</h3></div>
+      <div class="button"><h3>Log In</h3></div>
+      <div id="logo-button" class="button"><a href="/"><h3>HotDog</h3></a></div>
+    </div>    
+    <div class="body-content">
+      <div class="list">
+        <h2>How about these hosts..</h2>
+        <div class="row">
+          <% @hosts.each do |host| %>
+          <div id="host-box" class="col-sm-6">
+            <div class="thumbnail">
+              <a href="/hosts/<%= host.id %>"><img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash%>?s=100"></a>
+              <span class="thumb-content">
+                <h3><a href="/hosts/<%= host.id %>"><%= host.name %></a></h3> 
+               <p><%=host.description%></p>
+              </span>
+            </div>
+          </div>
+          <% end %>  
+        </div>
+      </div>
+      </div> 
+        <div id="footer">
+          <small>inspired by Rowan.</small>
+        </div>
+    </div>
+  </div>
+  <div class="r-wrapper">
+    <img id="bg" src="/img/tall_dog_4.jpg">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class=" " id="host-list-page">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -12,17 +69,15 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
-<!--           <button type="submit" class="btn btn-success">Sign up</button>
-          <button type="submit" class="btn btn-primary">Log in</button> -->
-          <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
+        <button type="submit" class="btn btn-success">Sign up</button>
+          <button type="submit" class="btn btn-primary">Log in</button>
+         <a href="/new" class="btn btn-warning" role="button">BECOME A HOST</a>
         </form>
-      </div><!--/.navbar-collapse -->
-    </div>
-  </nav> <!-- the end of navigation -->
-  <div class="map"> 
+      </div></div>
+   </nav><div class="map"> 
   <div id= "map-canvas" style= "height: 600px; width: 600px;"></div>
-  </div><!-- map end -->
-  <div class="listing">
+  </div>
+ <div class="listing">
     <h2>HOST LISTINGS</h2>
     <div class="container-fluid">
 
@@ -32,9 +87,9 @@
           <li><a href="#">Home</a></li>
           <li class="active">Hostlist</li>
         </ol>
-      </div><!-- column id = breadcrumb -->
-    </div><!-- row id = breadcrumb -->
-  </div>
+      </div>
+    </div>
+ </div>
   <div class="row">
     <% @hosts.each do |host| %>
     <div class="col-sm-6">
@@ -43,9 +98,9 @@
         <div class="thumb-content">
          <h4><a href="/hosts/<%= host.id %>"><%= host.name %></a></h4> 
          <p><%=host.description%></p>
-       </div><!-- thumb-content -->
+       </div>
      </div>
    </div>
    <% end %>
  </div>
-</div><!-- pages div end -->
+</div> -->

@@ -15,7 +15,7 @@ get '/' do
 
   @hosts = Host.where("city LIKE ?", "#{params[:city]}%")
 
-  erb :hosts
+    erb :hosts
   else
     erb :index
   end
