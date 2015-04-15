@@ -4,23 +4,9 @@ configure do
     ActiveRecord::Base.logger = Logger.new(STDOUT)
   end
 
-  if development?
-  set :database, {
-    adapter: "sqlite3",
-    database: "db/db.sqlite3"
-  }
-else
-  set :database, ENV['DATABASE_URL']
-end
-
-  if ENV['RACK_ENV'] == 'test'
-    puts "Connecting to test database..."
-    set :database, {
-      adapter: "sqlite3",
-      database: "db/test.sqlite3"
-    }
+  if ENV['RACK_ENV'] == 'production'
+    set :database, ENV['DATABASE_URL']  
   else
-    puts "Connecting to development database..."
     set :database, {
       adapter: "sqlite3",
       database: "db/db.sqlite3"
