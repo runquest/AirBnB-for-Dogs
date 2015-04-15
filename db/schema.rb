@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330002227) do
+ActiveRecord::Schema.define(version: 20150415035919) do
 
   create_table "bookings", force: true do |t|
     t.integer  "host_id"
     t.integer  "dog_id"
     t.integer  "dog_feedback"
     t.integer  "owner_feedback"
-    t.string   "dog_comments"
-    t.string   "owner_comments"
+    t.text     "dog_comments",   limit: 255
+    t.text     "owner_comments", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20150330002227) do
     t.string   "city"
     t.string   "country"
     t.string   "zipcode"
-    t.string   "description"
+    t.text     "description",     limit: 255
     t.string   "profile_picture"
     t.string   "email_hash"
   end
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 20150330002227) do
     t.string   "city"
     t.string   "country"
     t.string   "zipcode"
-    t.string   "description"
+    t.text     "description",     limit: 255
     t.string   "profile_picture"
     t.string   "password"
     t.string   "username"
