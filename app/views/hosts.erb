@@ -16,10 +16,10 @@
           <% @hosts.each do |host| %>
           <div id="host-box" class="col-sm-6">
             <div class="thumbnail">
-              <a href="/hosts/<%= host.id %>"><img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash%>?s=100"></a>
+              <a href="/hosts/<%= host.id %>"><img id="profile_picture" src="http://www.gravatar.com/avatar/<%= host.email_hash %>?s=100"></a>
               <span class="thumb-content">
                 <h3><a href="/hosts/<%= host.id %>"><%= host.name %></a></h3> 
-               <p><%=host.description%></p>
+               <p><%= host.description %></p>
               </span>
             </div>
           </div>
@@ -27,12 +27,7 @@
         </div>
       
       </div>
-      </div> 
-    
-        <div id="footer">
-          <small>inspired by Rowan.</small>
-        </div>
-    
+      </div>     
     </div>
   </div>
   
